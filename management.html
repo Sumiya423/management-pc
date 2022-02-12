@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav item-1">
+                <img src="/pic/logo.png" alt="">
+                <p>STARTUP STUDIO</p>
+            </div>
+            <div class="nav item-2">
+                <p>プロジェクト一覧</p>
+                <p>プロジェクトのつくり方</p>
+                <button class="nav_tag">法人の方</button>
+                <img class="msg" src="/pic/msg.png" alt="">
+                <img class="bell" src="/pic/bell.png" alt="">
+                <img class="people" src="/pic/people.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="manage_list">
+        <div class="manage_list_heading">
+            <p>プロジェクト管理</p>
+        </div>
+        <div class="manage_list_body">
+            <div class="manage_card">
+                <div class="manage_card_image">
+                    <img src="/pic/card_img.png" alt="">
+                </div>
+                <div class="manage_card_description">
+                    <div class="des_head">
+                        <p class="des_head_tag">募集中</p>
+                        <button>プロトタイプ開発中</button>
+                        <p class="des_head_date">作成：2021.xx.xx</p>
+                    </div>
+                    <div class="des_location">
+                        <p>首都圏</p>
+                        <p>Smart Home Tech（スマートホーム）</p>
+
+                    </div>
+                    <p class="des_description">ユカイなロボットを世界に！IPOを目指した事業成長をご一緒できる方を募集しています。
+                    </p>
+                    <button>このプロジェクトを管理</button>
+                </div>
+            </div>
+            <div class="manage_card">
+                <div class="manage_card_image">
+                    <img src="/pic/card_img.png" alt="">
+                </div>
+                <div class="manage_card_description">
+                    <div class="des_head">
+                        <p class="des_head_tag">募集中</p>
+                        <button>プロトタイプ開発中</button>
+                        <p class="des_head_date">作成：2021.xx.xx</p>
+                    </div>
+                    <div class="des_location">
+                        <p>首都圏</p>
+                        <p>Smart Home Tech（スマートホーム）</p>
+
+                    </div>
+                    <p class="des_description">ユカイなロボットを世界に！IPOを目指した事業成長をご一緒できる方を募集しています。
+                    </p>
+                    <button>このプロジェクトを管理</button>
+                </div>
+            </div>
+            <div class="manage_card">
+                <div class="manage_card_image">
+                    <img src="/pic/card_img.png" alt="">
+                </div>
+                <div class="manage_card_description">
+                    <div class="des_head">
+                        <p class="des_head_tag">募集中</p>
+                        <button>プロトタイプ開発中</button>
+                        <p class="des_head_date">作成：2021.xx.xx</p>
+                    </div>
+                    <div class="des_location">
+                        <p>首都圏</p>
+                        <p>Smart Home Tech（スマートホーム）</p>
+
+                    </div>
+                    <p class="des_description">ユカイなロボットを世界に！IPOを目指した事業成長をご一緒できる方を募集しています。
+                    </p>
+                    <button>このプロジェクトを管理</button>
+                </div>
+            </div>
+            <div class="manage_card">
+                <div class="manage_card_image">
+                    <img src="/pic/card_img.png" alt="">
+                </div>
+                <div class="manage_card_description">
+                    <div class="des_head">
+                        <p class="des_head_tag">募集中</p>
+                        <button>プロトタイプ開発中</button>
+                        <p class="des_head_date">作成：2021.xx.xx</p>
+                    </div>
+                    <div class="des_location">
+                        <p>首都圏</p>
+                        <p>Smart Home Tech（スマートホーム）</p>
+                    </div>
+                    <p class="des_description">ユカイなロボットを世界に！IPOを目指した事業成長をご一緒できる方を募集しています。
+                    </p>
+                    <button>このプロジェクトを管理</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".manage_card");
+        
+        for(let i=0; i<cards.length; i++){
+            cards[i].onclick = selectItems;
+        }
+        function selectItems() {
+            console.log("click")
+            if(this.classList.contains("card-select")){
+                this.classList.remove("card-select");
+            }else{
+                this.classList.add("card-select");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
